@@ -1,0 +1,12 @@
+snake\entity\Player.class
+snake\exception\ConnectionFailureException.class
+snake\dto\SnakeResult.class
+snake\web\SnakeController.class
+snake\enums\PlayerStatusEnum.class
+snake\service\threads\SocketThread.class
+snake\dto\GameStatus.class
+snake\service\impl\SnakeServiceImpl.class
+snake\exception\IpConflictException.class
+snake\dao\PlayersDao.class
+snake\exception\SnakeException.class
+snake\service\SnakeService.class

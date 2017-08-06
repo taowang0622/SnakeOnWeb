@@ -19688,22 +19688,14 @@ Language</ColNames>
       <ColNames>player_name</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="3970" parent="395" name="host_name">
-      <ColNames>host_name</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="3971" parent="395" name="PRIMARY">
+    <key id="3970" parent="395" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="3972" parent="395" name="player_name">
+    <key id="3971" parent="395" name="player_name">
       <ColNames>player_name</ColNames>
       <UnderlyingIndexName>player_name</UnderlyingIndexName>
-    </key>
-    <key id="3973" parent="395" name="host_name">
-      <ColNames>host_name</ColNames>
-      <UnderlyingIndexName>host_name</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

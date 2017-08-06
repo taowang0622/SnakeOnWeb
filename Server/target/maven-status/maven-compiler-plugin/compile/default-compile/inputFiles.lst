@@ -1,0 +1,13 @@
+D:\JAVA_PROJECTS\SnakeOnWeb\src\main\java\snake\web\SnakeController.java
+D:\JAVA_PROJECTS\SnakeOnWeb\src\main\java\snake\dao\PlayersDao.java
+D:\JAVA_PROJECTS\SnakeOnWeb\src\main\java\snake\exception\ConnectionFailureException.java
+D:\JAVA_PROJECTS\SnakeOnWeb\src\main\java\snake\dto\SnakeResult.java
+D:\JAVA_PROJECTS\SnakeOnWeb\src\main\java\snake\service\threads\SocketThread.java
+D:\JAVA_PROJECTS\SnakeOnWeb\src\main\java\snake\service\listeners\StartUpListener.java
+D:\JAVA_PROJECTS\SnakeOnWeb\src\main\java\snake\exception\SnakeException.java
+D:\JAVA_PROJECTS\SnakeOnWeb\src\main\java\snake\service\impl\SnakeServiceImpl.java
+D:\JAVA_PROJECTS\SnakeOnWeb\src\main\java\snake\dto\GameStatus.java
+D:\JAVA_PROJECTS\SnakeOnWeb\src\main\java\snake\enums\PlayerStatusEnum.java
+D:\JAVA_PROJECTS\SnakeOnWeb\src\main\java\snake\exception\IpConflictException.java
+D:\JAVA_PROJECTS\SnakeOnWeb\src\main\java\snake\service\SnakeService.java
+D:\JAVA_PROJECTS\SnakeOnWeb\src\main\java\snake\entity\Player.java

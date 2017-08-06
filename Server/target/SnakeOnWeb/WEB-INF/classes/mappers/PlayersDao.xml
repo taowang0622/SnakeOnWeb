@@ -1,0 +1,57 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--mapping the specific dao interfaces to specified SQL stattements-->
+<mapper namespace="snake.dao.PlayersDao">
+
+    <!--Since setting sqlSessionFactory's property "typeAliasesPackage" to "SnakeOnWeb.entity", no need to write a full qualified class name-->
+    <select id="queryAll" resultType="Player">
+        SELECT *
+        FROM players
+        ORDER BY status DESC;
+    </select>
+
+    <select id="queryPlayer" resultType="Player">
+        SELECT *
+        FROM players
+        WHERE player_name = #{playerName};
+    </select>
+
+    <update id="setPlaying">
+        UPDATE players
+        SET status = 1 # 1=>playing
+        WHERE id = #{id};
+    </update>
+
+    <update id="setOffline">
+        UPDATE players
+        SET status = 0 # 0=>offline
+        WHERE id = #{id};
+    </update>
+
+    <update id="setAvailable">
+        UPDATE players
+        SET status = 2 # 2=>available
+        WHERE id = #{id};
+    </update>
+
+    <update id="setBestScore">
+        UPDATE players
+        SET best_score = #{bestScore}
+        WHERE id = #{id}
+    </update>
+
+    <update id="setHostName">
+        UPDATE players
+        SET host_name = #{hostName}
+        WHERE id = #{id}
+    </update>
+
+    <insert id="insertPlayer">
+        INSERT IGNORE INTO players(player_name, status, best_score, host_name)
+        # 2 represents available
+        VALUES (#{playerName}, 2, 0, #{hostName})
+    </insert>
+
+</mapper>
